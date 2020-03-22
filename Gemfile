@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails',                   '4.2.11'
+gem 'rails', '5.2.4.2'
 
 gem 'rake',                    '0.9.2.2'
 
@@ -13,7 +13,7 @@ gem 'sequel_pg',               '~> 1.12.0', require: 'sequel'
 gem 'activerecord-postgresql-adapter'
 
 gem 'protected_attributes'
-gem 'responders', '~> 2.0'
+gem 'responders', '~> 2.4', '>= 2.4.0'
 
 gem 'rails_warden',            '0.5.8' # Auth via the Warden Rack framework
 gem 'ruby-saml',               '1.4.1'
@@ -62,7 +62,7 @@ gem 'faraday',                 '0.9.0'
 gem 'google-api-client',       '0.28.4'
 gem 'dropbox_api',             '0.1.6'
 gem 'instagram',               '1.1.6'
-gem 'gibbon',                  '1.1.4'
+gem 'gibbon', '1.1.4'
 
 # Service components (/services)
 gem 'virtus',                   '1.0.5'
@@ -89,11 +89,11 @@ gem 'rqrcode', '~> 0.10.1'
 
 group :test do
   gem 'simplecov', '0.13.0', require: false
-  gem 'simplecov-json'
-  gem 'simplecov-rcov'
+  gem 'simplecov-json', '>= 0.2'
+  gem 'simplecov-rcov', '>= 0.2.3'
   gem 'db-query-matchers',     '0.4.0'
   gem 'rack-test',             '0.6.3',  require: 'rack/test'
-  gem 'factory_girl_rails',    '~> 4.0.0'
+  gem 'factory_girl_rails', '~> 4.0.0'
   gem 'selenium-webdriver',    '>= 2.5.0'
   gem 'capybara',              '1.1.2'
   gem 'delorean'
@@ -115,7 +115,7 @@ group :test, :development do
 end
 
 group :development, :test do
-  gem 'rspec-rails',           '2.12.0'
+  gem 'rspec-rails', '2.12.0'
   gem 'rb-readline'
   gem 'byebug'
   gem 'rack'
