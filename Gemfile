@@ -62,7 +62,7 @@ gem 'faraday',                 '0.9.0'
 gem 'google-api-client',       '0.28.4'
 gem 'dropbox_api',             '0.1.6'
 gem 'instagram',               '1.1.6'
-gem 'gibbon',                  '1.1.4'
+gem 'gibbon', '1.1.4'
 
 # Service components (/services)
 gem 'virtus',                   '1.0.5'
@@ -89,8 +89,8 @@ gem 'rqrcode', '~> 0.10.1'
 
 group :test do
   gem 'simplecov', '0.13.0', require: false
-  gem 'simplecov-json'
-  gem 'simplecov-rcov'
+  gem 'simplecov-json', '>= 0.2'
+  gem 'simplecov-rcov', '>= 0.2.3'
   gem 'db-query-matchers',     '0.4.0'
   gem 'rack-test',             '0.6.3',  require: 'rack/test'
   gem 'factory_girl_rails',    '~> 4.0.0'
