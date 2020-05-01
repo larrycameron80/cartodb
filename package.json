@@ -37,7 +37,7 @@
     "fastclick": "^1.0.6",
     "html-webpack-plugin": "^3.2.0",
     "internal-carto.js": "CartoDB/carto.js#v4.1.12-1",
-    "jquery": "2.1.4",
+    "jquery": "3.5.0",
     "leaflet": "CartoDB/Leaflet#v1.3.1-carto1",
     "loader-utils": "https://registry.npmjs.org/loader-utils/-/loader-utils-0.2.17.tgz",
     "moment": "2.18.1",
@@ -65,7 +65,8 @@
     "vuex": "^3.0.1",
     "webpack": "4.12.0",
     "webpack-cli": "^3.0.4",
-    "whatwg-fetch": "https://registry.npmjs.org/whatwg-fetch/-/whatwg-fetch-2.0.3.tgz"
+    "whatwg-fetch": "https://registry.npmjs.org/whatwg-fetch/-/whatwg-fetch-2.0.3.tgz",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "@vue/test-utils": "^1.0.0-beta.25",
@@ -223,6 +224,9 @@
     "dev": "NODE_ENV=development webpack --progress --watch --config webpack/v4/webpack.dev.config.js",
     "dev:editor": "grunt editor",
     "dev:static": "webpack --progress --watch --config webpack/static-pages/webpack.dev.config.js",
-    "profile": "NODE_ENV=production webpack --profile --json --config webpack/v4/webpack.prod.config.js > compilation-stats.json"
-  }
+    "profile": "NODE_ENV=production webpack --profile --json --config webpack/v4/webpack.prod.config.js > compilation-stats.json",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
+  },
+  "snyk": true
 }
