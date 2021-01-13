@@ -71,7 +71,7 @@ gem 'cartodb-common',           git: 'https://github.com/cartodb/cartodb-common.
 gem 'email_address',            '~> 0.1.11'
 
 # Markdown
-gem 'redcarpet', '3.3.3'
+gem 'redcarpet', '3.5.1'
 
 # TODO Production gems, put them in :production group
 gem 'rollbar',               '~>2.11.1'
