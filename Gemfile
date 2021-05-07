@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails',                   '4.2.11'
+gem 'rails', '5.2.4.6'
 
 gem 'rake',                    '0.9.2.2'
 
@@ -13,7 +13,7 @@ gem 'sequel_pg',               '~> 1.12.0', require: 'sequel'
 gem 'activerecord-postgresql-adapter'
 
 gem 'protected_attributes'
-gem 'responders', '~> 2.0'
+gem 'responders', '~> 2.4', '>= 2.4.0'
 
 gem 'rails_warden',            '0.5.8' # Auth via the Warden Rack framework
 gem 'ruby-saml',               '1.4.1'
@@ -93,7 +93,7 @@ group :test do
   gem 'simplecov-rcov'
   gem 'db-query-matchers',     '0.4.0'
   gem 'rack-test',             '0.6.3',  require: 'rack/test'
-  gem 'factory_girl_rails',    '~> 4.0.0'
+  gem 'factory_girl_rails', '~> 4.0.0'
   gem 'selenium-webdriver',    '>= 2.5.0'
   gem 'capybara',              '1.1.2'
   gem 'delorean'
@@ -115,7 +115,7 @@ group :test, :development do
 end
 
 group :development, :test do
-  gem 'rspec-rails',           '2.12.0'
+  gem 'rspec-rails', '2.12.0'
   gem 'rb-readline'
   gem 'byebug'
   gem 'rack'
