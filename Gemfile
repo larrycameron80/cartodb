@@ -26,7 +26,7 @@ gem 'redis',                   '~> 3.3.5'
 
 gem 'nokogiri',                '~> 1.8.2'
 gem 'statsd-client',           '0.0.7', require: 'statsd'
-gem 'aws-sdk-s3',              '~> 1'
+gem 'aws-sdk-s3', '~> 1', '>= 1.9.0'
 gem 'ruby-prof',               '0.15.1'
 gem 'request_store',           '1.1.0'
 
