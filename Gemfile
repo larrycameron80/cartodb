@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails',                   '4.2.11'
+gem 'rails', '5.2.8.1'
 
 gem 'rake',                    '0.9.2.2'
 
@@ -54,7 +54,7 @@ end
 
 # Importer & sync tables
 gem 'roo',                     '1.13.2'
-gem 'state_machines-activerecord', '~> 0.5.0'
+gem 'state_machines-activerecord', '~> 0.5.1'
 gem 'typhoeus',                '0.7.2'
 gem 'charlock_holmes',         '0.7.6'
 gem 'dbf',                     '2.0.6'
