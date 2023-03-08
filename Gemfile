@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails',                   '4.2.11'
+gem 'rails', '5.0.0'
 
 gem 'rake',                    '0.9.2.2'
 
@@ -13,7 +13,7 @@ gem 'sequel_pg',               '~> 1.12.0', require: 'sequel'
 gem 'activerecord-postgresql-adapter'
 
 gem 'protected_attributes'
-gem 'responders', '~> 2.0'
+gem 'responders', '~> 2.3', '>= 2.3.0'
 
 gem 'rails_warden',            '0.5.8' # Auth via the Warden Rack framework
 gem 'ruby-saml',               '1.4.1'
@@ -93,14 +93,14 @@ group :test do
   gem 'simplecov-rcov'
   gem 'db-query-matchers',     '0.4.0'
   gem 'rack-test',             '0.6.3',  require: 'rack/test'
-  gem 'factory_girl_rails',    '~> 4.0.0'
+  gem 'factory_girl_rails', '~> 4.0.0'
   gem 'selenium-webdriver',    '>= 2.5.0'
   gem 'capybara',              '1.1.2'
   gem 'delorean'
   gem 'webrick',               '1.3.1'
   gem 'mocha',                 '1.1.0'
   gem 'ci_reporter',           '1.8.4'
-  gem 'poltergeist',           '>= 1.0.0'
+  gem 'poltergeist', '>= 1.0.3'
   gem 'activerecord-nulldb-adapter', '0.3.1'
   # Need to use specific branch from this fork as original gem is broken and outdated
   gem 'fake_net_ldap', git: 'https://github.com/kuldeepaggarwal/fake_net_ldap.git', :branch => 'fix-responder'
@@ -118,7 +118,7 @@ group :development, :test do
   gem 'rspec-rails',           '2.12.0'
   gem 'rb-readline'
   gem 'byebug'
-  gem 'rack'
+  gem 'rack', '>= 2.0.9.3'
   gem 'zeus'
 
   # Server
