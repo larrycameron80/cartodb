@@ -75,7 +75,7 @@ gem 'redcarpet', '3.3.3'
 
 # TODO Production gems, put them in :production group
 gem 'rollbar',               '~>2.11.1'
-gem 'resque',                '1.25.2'
+gem 'resque', '1.26.0'
 gem 'resque-metrics',        '0.1.1'
 
 gem 'net-telnet'
