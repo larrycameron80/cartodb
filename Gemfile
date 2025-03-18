@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails',                   '4.2.11'
+gem 'rails', '7.0.0'
 
 gem 'rake',                    '0.9.2.2'
 
@@ -16,7 +16,7 @@ gem 'protected_attributes'
 gem 'responders', '~> 2.0'
 
 gem 'rails_warden',            '0.5.8' # Auth via the Warden Rack framework
-gem 'ruby-saml',               '1.4.1'
+gem 'ruby-saml', '1.12.4'
 gem 'oauth',                   '0.4.7'
 gem 'oauth-plugin',            git: 'https://github.com/CartoDB/oauth-plugin.git', :branch => 'cartodb'
 
@@ -43,7 +43,7 @@ gem 'json-schema',             '2.1.9'
 gem 'mime-types',              '3.1'
 
 group :production, :staging do
-  gem 'unicorn',               '4.8.2'
+  gem 'unicorn', '5.1.0'
   gem 'unicorn-worker-killer'
   gem 'raindrops',             '0.15.0'
 end
@@ -75,7 +75,7 @@ gem 'redcarpet', '3.3.3'
 
 # TODO Production gems, put them in :production group
 gem 'rollbar',               '~>2.11.1'
-gem 'resque',                '1.25.2'
+gem 'resque', '2.2.1'
 gem 'resque-metrics',        '0.1.1'
 
 gem 'net-telnet'
@@ -118,7 +118,7 @@ group :development, :test do
   gem 'rspec-rails',           '2.12.0'
   gem 'rb-readline'
   gem 'byebug'
-  gem 'rack'
+  gem 'rack', '>= 2.2.13'
   gem 'zeus'
 
   # Server
