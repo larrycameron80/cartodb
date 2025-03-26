@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails',                   '4.2.11'
+gem 'rails', '7.0.0'
 
 gem 'rake',                    '0.9.2.2'
 
@@ -24,7 +24,7 @@ gem 'oauth-plugin',            git: 'https://github.com/CartoDB/oauth-plugin.git
 gem 'hiredis',                 '~> 0.6.1'
 gem 'redis',                   '~> 3.3.5'
 
-gem 'nokogiri',                '~> 1.8.2'
+gem 'nokogiri', '~> 1.18.4'
 gem 'statsd-client',           '0.0.7', require: 'statsd'
 gem 'aws-sdk-s3',              '~> 1'
 gem 'ruby-prof',               '0.15.1'
