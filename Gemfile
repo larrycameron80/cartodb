@@ -115,7 +115,7 @@ group :test, :development do
 end
 
 group :development, :test do
-  gem 'rspec-rails',           '2.12.0'
+  gem 'rspec-rails', '8.0.0'
   gem 'rb-readline'
   gem 'byebug'
   gem 'rack'
