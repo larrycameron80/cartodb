@@ -1,22 +1,22 @@
 source 'http://rubygems.org'
 
-gem 'rails',                   '4.2.11'
+gem 'rails', '7.1.0'
 
 gem 'rake',                    '0.9.2.2'
 
 # PostgreSQL
 gem 'pg',                      '0.20.0'
 gem 'sequel',                  '~> 4.45.0'
-gem 'sequel-rails', '~> 1.0.1'
+gem 'sequel-rails', '~> 1.1.0'
 gem 'sequel_pg',               '~> 1.12.0', require: 'sequel'
 
 gem 'activerecord-postgresql-adapter'
 
-gem 'protected_attributes'
-gem 'responders', '~> 2.0'
+gem 'protected_attributes', '>= 1.1.4'
+gem 'responders', '~> 3.0', '>= 3.0.0'
 
-gem 'rails_warden',            '0.5.8' # Auth via the Warden Rack framework
-gem 'ruby-saml',               '1.4.1'
+gem 'rails_warden', '0.6.0' # Auth via the Warden Rack framework
+gem 'ruby-saml', '1.4.2'
 gem 'oauth',                   '0.4.7'
 gem 'oauth-plugin',            git: 'https://github.com/CartoDB/oauth-plugin.git', :branch => 'cartodb'
 
@@ -26,7 +26,7 @@ gem 'redis',                   '~> 3.3.5'
 
 gem 'nokogiri',                '~> 1.8.2'
 gem 'statsd-client',           '0.0.7', require: 'statsd'
-gem 'aws-sdk-s3',              '~> 1'
+gem 'aws-sdk-s3', '~> 1', '>= 1.9.1'
 gem 'ruby-prof',               '0.15.1'
 gem 'request_store',           '1.1.0'
 
@@ -44,7 +44,7 @@ gem 'mime-types',              '3.1'
 
 group :production, :staging do
   gem 'unicorn',               '4.8.2'
-  gem 'unicorn-worker-killer'
+  gem 'unicorn-worker-killer', '>= 0.4.5'
   gem 'raindrops',             '0.15.0'
 end
 
@@ -53,14 +53,14 @@ group :assets do
 end
 
 # Importer & sync tables
-gem 'roo',                     '1.13.2'
+gem 'roo', '2.0.0'
 gem 'state_machines-activerecord', '~> 0.5.0'
 gem 'typhoeus',                '0.7.2'
 gem 'charlock_holmes',         '0.7.6'
 gem 'dbf',                     '2.0.6'
 gem 'faraday',                 '0.9.0'
 gem 'google-api-client',       '0.28.4'
-gem 'dropbox_api',             '0.1.6'
+gem 'dropbox_api', '0.1.7'
 gem 'instagram',               '1.1.6'
 gem 'gibbon',                  '1.1.4'
 
@@ -75,7 +75,7 @@ gem 'redcarpet', '3.3.3'
 
 # TODO Production gems, put them in :production group
 gem 'rollbar',               '~>2.11.1'
-gem 'resque',                '1.25.2'
+gem 'resque', '1.26.0'
 gem 'resque-metrics',        '0.1.1'
 
 gem 'net-telnet'
@@ -89,19 +89,19 @@ gem 'rqrcode', '~> 0.10.1'
 
 group :test do
   gem 'simplecov', '0.13.0', require: false
-  gem 'simplecov-json'
-  gem 'simplecov-rcov'
+  gem 'simplecov-json', '>= 0.2.1'
+  gem 'simplecov-rcov', '>= 0.3.0'
   gem 'db-query-matchers',     '0.4.0'
-  gem 'rack-test',             '0.6.3',  require: 'rack/test'
-  gem 'factory_girl_rails',    '~> 4.0.0'
-  gem 'selenium-webdriver',    '>= 2.5.0'
-  gem 'capybara',              '1.1.2'
+  gem 'rack-test', '2.0.0', require: 'rack/test'
+  gem 'factory_girl_rails', '~> 4.1.0'
+  gem 'selenium-webdriver', '>= 2.53.0'
+  gem 'capybara', '1.1.3'
   gem 'delorean'
-  gem 'webrick',               '1.3.1'
+  gem 'webrick', '1.8.2'
   gem 'mocha',                 '1.1.0'
   gem 'ci_reporter',           '1.8.4'
-  gem 'poltergeist',           '>= 1.0.0'
-  gem 'activerecord-nulldb-adapter', '0.3.1'
+  gem 'poltergeist', '>= 1.1.0'
+  gem 'activerecord-nulldb-adapter', '0.3.2'
   # Need to use specific branch from this fork as original gem is broken and outdated
   gem 'fake_net_ldap', git: 'https://github.com/kuldeepaggarwal/fake_net_ldap.git', :branch => 'fix-responder'
   gem 'mock_redis'
@@ -115,14 +115,14 @@ group :test, :development do
 end
 
 group :development, :test do
-  gem 'rspec-rails',           '2.12.0'
+  gem 'rspec-rails', '2.12.1'
   gem 'rb-readline'
   gem 'byebug'
   gem 'rack'
   gem 'zeus'
 
   # Server
-  gem 'thin',                           require: false
+  gem 'thin', '>= 2.0.0', require: false
 end
 
 # segment metrics
