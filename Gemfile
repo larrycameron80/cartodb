@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails',                   '4.2.11'
+gem 'rails', '7.1.5.2'
 
 gem 'rake',                    '0.9.2.2'
 
@@ -54,7 +54,7 @@ end
 
 # Importer & sync tables
 gem 'roo',                     '1.13.2'
-gem 'state_machines-activerecord', '~> 0.5.0'
+gem 'state_machines-activerecord', '~> 0.6.0'
 gem 'typhoeus',                '0.7.2'
 gem 'charlock_holmes',         '0.7.6'
 gem 'dbf',                     '2.0.6'
@@ -101,7 +101,7 @@ group :test do
   gem 'mocha',                 '1.1.0'
   gem 'ci_reporter',           '1.8.4'
   gem 'poltergeist',           '>= 1.0.0'
-  gem 'activerecord-nulldb-adapter', '0.3.1'
+  gem 'activerecord-nulldb-adapter', '0.3.2'
   # Need to use specific branch from this fork as original gem is broken and outdated
   gem 'fake_net_ldap', git: 'https://github.com/kuldeepaggarwal/fake_net_ldap.git', :branch => 'fix-responder'
   gem 'mock_redis'
