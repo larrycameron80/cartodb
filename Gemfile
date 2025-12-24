@@ -26,7 +26,7 @@ gem 'redis',                   '~> 3.3.5'
 
 gem 'nokogiri',                '~> 1.8.2'
 gem 'statsd-client',           '0.0.7', require: 'statsd'
-gem 'aws-sdk-s3',              '~> 1'
+gem 'aws-sdk-s3', '~> 1', '>= 1.208.0'
 gem 'ruby-prof',               '0.15.1'
 gem 'request_store',           '1.1.0'
 
@@ -62,7 +62,7 @@ gem 'faraday',                 '0.9.0'
 gem 'google-api-client',       '0.28.4'
 gem 'dropbox_api',             '0.1.6'
 gem 'instagram',               '1.1.6'
-gem 'gibbon',                  '1.1.4'
+gem 'gibbon', '2.0.0'
 
 # Service components (/services)
 gem 'virtus',                   '1.0.5'
